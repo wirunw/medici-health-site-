@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import FeatureCard from '../components/FeatureCard'
+import HealthAssessment from '../components/HealthAssessment'
 
 export default function Landing(){
   return (
@@ -34,6 +35,23 @@ export default function Landing(){
               <p className="text-sm text-slate-600">ประสานงานแบบเรียลไทม์</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-12">
+        <div className="grid md:grid-cols-2 gap-8 items-start">
+          <div>
+            <h2 className="text-2xl font-bold mb-4">ประเมินสุขภาพของคุณใน 2 นาที</h2>
+            <p className="text-slate-600 mb-4">
+              ทำแบบประเมินสุขภาพเบื้องต้นเพื่อทราบสถานะสุขภาพปัจจุบันและรับคำแนะนำที่เหมาะสมจากทีมผู้เชี่ยวชาญ
+            </p>
+            <ul className="list-disc ml-5 text-sm text-slate-600 space-y-1">
+              <li>ประเมินพฤติกรรมสุขภาพ 7 ด้าน</li>
+              <li>รับผลลัพธ์พร้อมคำแนะนำทันที</li>
+              <li>เชื่อมต่อกับทีมแพทย์เพื่อปรึกษาต่อ</li>
+            </ul>
+          </div>
+          <HealthAssessment compact />
         </div>
       </section>
 
